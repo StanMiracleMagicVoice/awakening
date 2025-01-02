@@ -1,0 +1,142 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1C1B1D;
+    color: #d1e2ea;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    min-height: 100vh; /* 保證內容區域至少佔滿屏幕高度 */
+    overflow: hidden; /* 防止內容超出視窗 */
+
+  }
+  
+  h1 {
+    margin: 20px 30px 0;
+    text-align: left;
+    color: #64839b;
+    position: relative;
+    z-index: 1;
+    width: 100%;
+  }
+  
+  #question-container {
+    margin: 30px 30px 0;
+    text-align: left;
+    position: relative;
+    z-index: 1;
+    width: 100%; /* 調整寬度以適應小屏幕 */
+  }
+
+  #result {
+    margin: 30px 30px 0;
+    text-align: left;
+    position: relative;
+    z-index: 1;
+    width: 100%; /* 調整寬度以適應小屏幕 */
+  }
+  
+  button {
+    margin: 30px 30px 0;
+    text-align: left;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #700650;
+    color: rgb(230, 237, 238);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+    max-width: 80px; /* 固定寬度 */
+    height: 35px; /* 固定高度 */
+  }
+  
+  button:hover {
+    background-color: #9b0c8b;
+  }
+  
+  #background-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;/* 使視頻適應容器大小，同時保持比例 */
+    z-index: 0;
+  }
+  
+  /* 卡片樣式 */
+  #magic-card {
+    background-color: #7613D0;
+    border: 10px solid #40013a;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(188, 7, 161, 0.1);
+    position: relative;
+    z-index: 1;
+    width: 60%; /* 調整卡片寬度 */
+    max-width: 400px; /* 設置最大寬度 */
+    height: auto; /* 調整高度自適應 */
+    margin: 20px auto 20px auto; /* 調整上下外邊距 */
+    background-image: url('background-image.jpg'); 
+    background-size: cover; /* 讓圖片覆蓋整個卡片 */ 
+    background-position: center; /* 中心定位 */
+  }
+  
+  #magic-link {
+    display: block;
+    text-decoration: none; /* 移除超連結樣式 */
+    color: inherit; /* 保持字體顏色不變 */
+  }
+  
+  .hidden {
+    display: none;
+  }
+
+  .play-music-btn {
+    position: absolute;
+    bottom: 20px; /* 離底部的距離 */
+    right: 20px; /* 離右側的距離 */
+    padding: 10px 20px;
+    font-size: 12px;
+    background-color: #63064b;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 10; /* 保證按鈕在頂層顯示 */
+  }
+  
+  .play-music-btn:hover {
+    background-color: #ae20b8;
+  }
+  
+  /* 響應式設計：針對小屏幕設置樣式 */
+  @media (max-width: 768px) {
+    body {
+      height: auto;
+    }
+  
+    #question-container, #result {
+      width: 100%; /* 使用全寬度 */
+      margin: 10px;
+    }
+  
+    #magic-card {
+      width: 100%; /* 使用全寬度 */
+      margin: 10px;
+      max-width: 80%;
+    }
+  
+    button {
+      width: 80%; /* 調整按鈕寬度 */
+    }
+  .play-music-btn {
+    bottom: 10px; /* 調整離底部的距離 */
+    right: 10px; /* 調整離右側的距離 */
+    width: 120px; /* 固定按鈕寬度 */
+  }
+  }

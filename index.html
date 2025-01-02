@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>不被祝福。始終走到最後。MagicVoice讓你魔力覺醒</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <h1>你確定已沉睡夠了？<br>要覺醒了嗎？</h1>
+  
+  <!-- 背景音樂 -->
+  <audio id="background-music" src="mv.mp3" autoplay loop></audio>
+
+  <!-- 背景動畫 -->
+  <video id="background-video" autoplay loop muted>
+    <source src="mv.mp4" type="video/mp4">
+    您的瀏覽器不支持HTML5視頻標籤。
+  </video>
+
+  <div id="question-container"></div>
+  <button id="next-button">NEXT</button>
+  <div id="result"></div>
+
+  <!-- 卡片超連結容器 -->
+  <a id="magic-link" href="https://www.penana.com/story/100271/" target="_blank" class="hidden">
+  <div id="magic-card" class="hidden">
+    <h2>你覺醒的魔力</h2>
+    <p id="magic-description"></p>
+    <p>點擊此卡前往Penana進入MagicVoice的小說世界<br>
+    點擊下方Spotify播放鍵立即進入MagicVoice的音樂世界</p>
+    <!-- Spotify音樂播放器 -->
+    <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/13GLOm414nr1lBUP4CDkOa?utm_source=generator" width="80%" height="280" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+  </div>
+</a>
+
+<!-- 背景音樂播放按鈕 -->
+<button id="play-music-button" class="play-music-btn">PLAY</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
